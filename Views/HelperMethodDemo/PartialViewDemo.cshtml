@@ -1,0 +1,9 @@
+﻿@page
+@model DotNetNote.Views.HelperMethodDemo.PartialViewDemoModel
+@{
+    Layout = null;
+}
+
+@Html.Partial("_PartialPage1")
+
+@Html.Partial("~/Views/HelperMethodDemo/_PartialPage2.cshtml")   @*다른 경로에 있는 뷰 페이지를 포함하려면 ~/...*@
