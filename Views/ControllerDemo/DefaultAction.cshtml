@@ -1,0 +1,20 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@*@{
+        Layout = null; //레이아웃을 사용하지 않으려면 추가
+    }*@
+
+
+@{
+    ViewBag.SiteName = "닷넷 노트";
+    ViewBag.SiteUrl = "http://www.dotnetnote.com";
+}
+<h2>ControllerDemo컨트롤러의 DefaultAction메서드 호출 시 보여지는 뷰 페이지</h2>
+<div class="text-center">
+    <em>
+        @ViewBag.SiteName<text>(</text>@ViewBag.SiteUrl@(")")사이트는
+        ASP.NET Core 1.0데모 사이트입니다.
+    </em>
+</div>
