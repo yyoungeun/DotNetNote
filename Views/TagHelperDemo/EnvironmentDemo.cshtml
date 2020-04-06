@@ -1,0 +1,13 @@
+﻿@page
+@model DotNetNote.Views.TagHelperDemo.EnvironmentDemoModel
+@{
+    Layout = null;
+}
+
+<environment names="Development">
+    <h3>현재 페이지는 개발(Development)환경입니다.</h3>
+</environment>
+
+<environment names="Staging,Production">
+    <h3>현재 페이지는 운영(Staging, Production) 환경입니다.</h3>
+</environment>

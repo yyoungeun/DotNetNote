@@ -96,5 +96,37 @@ namespace DotNetNote.Controllers
             return View();
         }
         #endregion
+
+        #region
+        public IActionResult ClientValidation(MaximModel model)
+        {
+            //넘어온 모델에 대한 유효성 검사
+            if (ModelState.IsValid)
+            {
+                return View("Completed");
+            }
+
+            return View();
+        }
+        #endregion
+
+        #region TagHelper
+        public IActionResult TagHelperValidation()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult TagHelperValidation(MaximModel model)
+        {
+            //넘어온 모델에 대한 유효성 검사
+            if (ModelState.IsValid)
+            {
+                return View("Completed");
+            }
+
+            return View();
+        }
+        #endregion
     }
 }

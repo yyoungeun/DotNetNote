@@ -30,6 +30,7 @@
         <text>: </text>
         @Html.TextBoxFor(c => c.Content)
         @Html.ValidationMessageFor(c => c.Content)<br/>
+        @Html.ValidationSummary(true,"", new { @class = "alert-danger"})
 
         <input type="submit" value="전송"/> 
     }
