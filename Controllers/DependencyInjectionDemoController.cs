@@ -35,5 +35,11 @@ namespace DotNetNote.Controllers
 
             return View();
         }
+
+        //@inject 직접 주입
+        public IActionResult AtInjectDemo()
+        {
+            return View();
+        }
     }
 }
