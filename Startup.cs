@@ -103,6 +103,9 @@ namespace DotNetNote
             //        name: "default",
             //        template: "{controller=Home}/{action=Index}/{id?}");
             //});
+
+            app.UseCors(options => options.WithOrigins("http://dotnetnote.azurewebsite.net/api/values"));
+            app.UseCors(options => options.AllowAnyOrigin().WithMethods("GET"));
         }
     }
 }
